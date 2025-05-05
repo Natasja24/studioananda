@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Studio Ananda</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />  
+</head>
+<body>
+  <div id="google_translate_element" class="translate-bar"></div>
+
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="overmij.html">over mij</a></li>
+              <li><a href="webdesign.html">Webdesign</a></li>
+              <li><a href="vitrualassistenten.html">Virtual Assist</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="grafisch-vormgever.html">Grafisch</a></li>
+              <li><a href="Overige.html">Overige</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+        
+            </ul>
+          </nav>
+    </header>
+
+<header class="contact-hero" data-aos="fade-down">
+  <h1>📬 Neem contact op</h1>
+  <p>Vertel me wat ik voor je kan betekenen of plan een kennismaking.</p>
+</header>
+
+<section class="contact-form" data-aos="fade-up">
+  <form action="#" method="POST">
+    <label>
+      Naam
+      <input type="text" name="naam" required />
+    </label>
+
+    <label>
+      E-mailadres
+      <input type="email" name="email" required />
+    </label>
+
+    <label>
+      Wat voor hulp zoek je?
+      <select name="dienst">
+        <option value="">Kies een optie</option>
+        <option>Webdesign</option>
+        <option>Grafisch ontwerp</option>
+        <option>Virtual assistentie</option>
+        <option>Fotobewerking</option>
+        <option>Anders</option>
+      </select>
+    </label>
+
+    <label>
+      Kennismakingsdatum (optioneel)
+      <input type="date" name="datum" />
+    </label>
+
+    <label>
+      Bericht
+      <textarea name="bericht" rows="5" placeholder="Vertel me wat je zoekt..."></textarea>
+    </label>
+
+    <button type="submit" class="magnetic-btn">Verstuur bericht 💌</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Studio Ananda – met liefde, aandacht en magie ✨</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'nl',
+        includedLanguages: 'en,nl,fr,de,es,it', // Voeg hier andere talen toe
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+<script>AOS.init();</script>
+</body>
+</html>

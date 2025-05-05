@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Studio Ananda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="javascript.js">
+</head>
+<body>
+  <div id="google_translate_element" class="translate-bar"></div>
+
+  <header>
+    <h1>Studio Ananda</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overmij.html">over mij</a></li>
+        <li><a href="webdesign.html">Webdesign</a></li>
+        <li><a href="vitrualassistenten.html">Virtual Assist</a></li>
+        <li><a href="grafisch-vormgever.html">Grafisch</a></li>
+        <li><a href="Overige.html">Overige</a></li>
+        <li><a href="programmeren.html">coming soon</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio-hero">
+    <h2>Portfolio</h2>
+    <p>Een greep uit mijn creatieve werk.</p>
+  </section>
+
+  <section class="portfolio-grid">
+    <!-- Herhaal dit blok per project -->
+    <div class="portfolio-item fade-in">
+      <img src="../images/project1.jpg" alt="Project 1">
+      <div class="overlay">
+        <h3>Project Titel</h3>
+        <p>Korte beschrijving</p>
+      </div>
+    </div>
+    <!-- Voeg meer items toe -->
+  </section>
+  <header class="portfolio-hero" data-aos="fade-down">
+    <h1>📁 Mijn werk</h1>
+    <p>Creatief, afgestemd, met aandacht voor detail.</p>
+  </header>
+  
+  <section class="portfolio-filter" data-aos="fade-up">
+    <button class="filter-btn active" data-filter="all">Alles</button>
+    <button class="filter-btn" data-filter="web">Webdesign</button>
+    <button class="filter-btn" data-filter="grafisch">Grafisch</button>
+    <button class="filter-btn" data-filter="foto">Foto bewerking</button>
+    <button class="filter-btn" data-filter="va">Virtual Assistent</button>
+  </section>
+  
+  <section class="portfolio-grid" data-aos="fade-up">
+    <div class="project-card" data-category="web">
+      <img src="Foto/Offerte-1-1024x536.png" alt="vitrualassistenten project">
+      <h3>Offerte</h3>
+      <p>Zal jij ook graag willen weten hoe je een offerte maakt voor de bouw ik heb een offerte gemaakt die kun je gebruiken.  </p>
+    </div>
+    <div class="project-card" data-category="grafisch">
+      <img src="projecten /LOGO1.png" alt="Logo ontwerp">
+      <h3>Logo </h3>
+      <p>Zal jij ook graag je eigen logo willen hebben studio ananda kan voor jou een mooi logo maken en is ook nog uniek ook nog. ik wil u bedrijf helpen. </p>
+    </div>
+    <div class="project-card" data-category="foto">
+      <img src="Foto/IMG_5868.jpeg" alt="Fotobewerking">
+      <h3>Fotografie + eigen watermerk  </h3>
+      <p>Zal jij graag jou fotos willen bewerken of met een watermerk er op  </p>
+    </div>
+    <div class="project-card" data-category="va">
+      <img src="/images/project4.jpg" alt="VA ondersteuning">
+      <h3>Inbox Zero</h3>
+      <p>Structuur & support als VA</p>
+    </div>
+    <!-- Voeg gerust meer kaarten toe -->
+  </section>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'nl',
+          includedLanguages: 'en,nl,fr,de,es,it', // Voeg hier andere talen toe
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+
+  <script src="../js/script.js"></script>
+  <script src="../js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmeren Studio Ananda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="javascript.js">
+  
+</head>
+<body>
+  <div id="google_translate_element" class="translate-bar"></div>
+
+  <header>
+    <h1>Studio Ananda</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overmij.html">over mij</a></li>
+        <li><a href="webdesign.html">Webdesign</a></li>
+        <li><a href="vitrualassistenten.html">Virtual Assist</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="grafisch-vormgever.html">Grafisch</a></li>
+        <li><a href="Overige.html">Overige</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="programmeer-hero" data-aos="fade-down">
+    <h1><span id="typewriter"></span></h1>
+    <p>Creatief programmeren met gevoel voor vorm en functie.</p>
+  </header>
+  
+  <section class="tools-section" data-aos="fade-up">
+    <h2>🛠️ Talen & Tools</h2>
+    <div class="tool-badges">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Git</span>
+    </div>
+  </section>
+  
+  <section class="projecten-section" data-aos="fade-up">
+    <h2>💻 Code projecten</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio app</h3>
+        <p>React + Tailwind</p>
+        <a href="#">Bekijk demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Image Editor Tool</h3>
+        <p>Vanuit scratch in JS</p>
+        <a href="#">Bekijk project</a>
+      </div>
+      <!-- meer projectkaarten -->
+    </div>
+  </section>
+  
+  <section class="dev-love" data-aos="fade-in">
+    <h2>💡 Waarom ik programmeren leuk vind</h2>
+    <p>Voor mij is code een vorm van magie: van niks naar iets bouwen, ideeën tot leven brengen en mensen écht helpen met slimme oplossingen.</p>
+  </section>
+  
+  <section class="cta" data-aos="zoom-in">
+    <h2>Klaar om iets moois te bouwen samen?</h2>
+    <a href="contact.html" class="magnetic-btn">Let's build it ✨</a>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Studio Ananda – code met creativiteit & liefde 🌱</p>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    const words = ["Programmeren met stijl", "Slimme oplossingen maken", "Creatief coderen"];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+    const typewriter = document.getElementById("typewriter");
+  
+    function type() {
+      currentWord = words[i];
+      if (isDeleting) {
+        j--;
+      } else {
+        j++;
+      }
+  
+      typewriter.textContent = currentWord.slice(0, j);
+  
+      if (!isDeleting && j === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+        setTimeout(type, 200);
+      } else {
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
+    }
+  
+    type();
+  </script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'nl',
+          includedLanguages: 'en,nl,fr,de,es,it', // Voeg hier andere talen toe
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+
+  <section class="code-section">
+    <div class="terminal">
+      <p><span class="prompt">studio@ananda:</span> <span id="typing"></span><span class="cursor">|Comming soon</span></p>
+    </div>
+  </section>
+
+  <script src="../js/typen.js"></script>
+</body>
+</html>

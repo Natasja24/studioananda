@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Ananda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="javascript.js">
+  
+</head>
+<script>
+const woorden = ["Creatief", "Technisch", "Uniek", "Op Maat", "Magisch"];
+let i = 0;
+
+setInterval(() => {
+  document.getElementById("wisselwoord").textContent = woorden[i];
+  i = (i + 1) % woorden.length;
+}, 2000);
+</script>
+  
+<body>
+  <div id="google_translate_element" class="translate-bar"></div>
+
+  <div class="blob-bg"></div>
+  <header>
+    <h1>Studio Ananda</h1>
+    <nav>
+      <ul>
+        <li><a href="overmij.html">over mij</a></li>
+        <li><a href="webdesign.html">Webdesign</a></li>
+        <li><a href="vitrualassistenten.html">Virtual Assist</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="grafisch-vormgever.html">Grafisch</a></li>
+        <li><a href="Overige.html">Overige</a></li>
+        <li><a href="programmeren.html">coming soon</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="parallax-bg"></div>
+
+  <header class="hero">
+    <h1 data-aos="fade-down">✨ Welkom bij Studio Ananda</h1>
+    <p data-aos="fade-up">Creativiteit met een ziel voor webdesign, assistentie, design & meer.</p>
+  </header>
+  <section class="intro" data-aos="fade-up">
+    <h2><span id="wisselwoord">Creatief</span></h2>
+    <p>Bij Studio Ananda krijg je geen standaardoplossingen, maar een ervaring op maat.</p>
+    <a href="portfolio.html" class="magnetic-btn">Bekijk mijn werk</a>
+  </section>
+
+  <main class="grid-sectie">
+    <!-- Webdesign -->
+    <a href="webdesign.html" class="card" data-aos="zoom-in">
+      <div class="icon-wrap">
+        🌐
+      </div>
+      <h3>Webdesign</h3>
+      <p>Op maat gemaakte websites die echt bij jou passen.</p>
+    </a>
+
+    <!-- Virtual Assistent -->
+    <a href="virtual-assistenten.html" class="card" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-wrap">
+        🧠
+      </div>
+      <h3>Virtual Assistent</h3>
+      <p>Laat de chaos los — ik regel het voor je.</p>
+    </a>
+
+    <!-- Portfolio -->
+    <a href="portfolio.html" class="card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-wrap">
+        🎨
+      </div>
+      <h3>Portfolio</h3>
+      <p>Bekijk mijn werk — visueel, functioneel en verrassend.</p>
+    </a>
+
+    <!-- Grafisch Design -->
+    <a href="grafische-design.html" class="card" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-wrap">
+        ✏️
+      </div>
+      <h3>Grafisch Design</h3>
+      <p>Logo’s, posters, branding – alles met karakter.</p>
+    </a>
+
+    <!-- Overige -->
+    <a href="overige.html" class="card" data-aos="zoom-in" data-aos-delay="400">
+      <div class="icon-wrap">
+        🖼️
+      </div>
+      <h3>Foto Bewerking</h3>
+      <p>Van kleine retouches tot complete makeovers.</p>
+    </a>
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Studio Ananda — Alles met aandacht 🌺</p>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+  <div class="cursor-dot"></div>
+<div class="parallax-bg"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'nl',
+        includedLanguages: 'en,nl,fr,de,es,it', // Voeg hier andere talen toe
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+
+<script src="javascript.js"></script>
+
+  
+</body>
+</html>
+
+
